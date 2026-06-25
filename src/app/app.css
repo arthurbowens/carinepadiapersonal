@@ -1,0 +1,49 @@
+:host {
+  display: block;
+}
+
+.hero-image {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.about-image {
+  box-shadow: 0 0 60px rgba(233, 30, 140, 0.25);
+}
+
+.service-card {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(233, 30, 140, 0.5);
+  box-shadow: 0 12px 40px rgba(233, 30, 140, 0.15);
+}
+
+.btn-primary {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(233, 30, 140, 0.4);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-brand-pink);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
